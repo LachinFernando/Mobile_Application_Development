@@ -3,7 +3,6 @@ from kivy.uix.screenmanager import FadeTransition, Screen, ScreenManager
 from kivymd.app import MDApp
 from kivy.network.urlrequest import UrlRequest
 from kivy import platform
-from kivy.core.window import Window
 
 import certifi as cf
 import base64
@@ -11,7 +10,7 @@ from plyer import filechooser
 import os
 
 
-Window.size = (300,500)
+
 
 if platform == "android":
     from android.permissions import request_permissions, Permission
